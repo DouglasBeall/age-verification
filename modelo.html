@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modelo.css">
+    <title>Verficação de Idade</title>
+</head>
+<body>
+    <header>
+        <h1> Verificação de Idade </h1>
+    </header>
+
+    <section>
+        <div>
+            <p> Qual seu ano de nascimento? </p>
+            <input type="number" id = "anoNasc" min = 0 checked>
+
+            <p> Gênero:
+                <input type="radio" name="radsex" id="mas">
+                <label for="mas"> Masculino </label>
+
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem"> Feminino </label>
+            </p>
+        </div>
+
+        <div id="res">
+            <input type="button" value="Verificar" id = "calc" onclick = "calcular()">
+        </div>
+
+        <div>
+            <p id = "msg">  </p>
+        </div>
+
+        <div id="foto">
+            <img id = "imagem" src="img/fotoanonimo.png" alt="Foto de Criança">
+        </div>
+    </section>
+
+    <footer>
+        &copy; Douglas Beal
+    </footer>
+
+    <script src="modelo.js"></script>
+</body>
+</html>
